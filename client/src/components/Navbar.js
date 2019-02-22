@@ -8,6 +8,8 @@ class Navbar extends Component {
             <div>
                 <NavLink exact to="/">Home</NavLink>
                 <NavLink exact to="/about">About</NavLink>
+                <NavLink exact to="/code">Code</NavLink>
+                <NavLink exact to="/photos">Photos</NavLink>
                 <NavLink exact to="/contact">Contact</NavLink>
             </div>
         )
