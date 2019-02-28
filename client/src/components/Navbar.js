@@ -10,6 +10,7 @@ class Navbar extends Component {
                 <NavLink exact to="/about">About</NavLink>
                 <NavLink exact to="/code">Code</NavLink>
                 <NavLink exact to="/photos">Photos</NavLink>
+                <NavLink exact to="/portfolio">Portfolio</NavLink>
                 <NavLink exact to="/contact">Contact</NavLink>
             </div>
         )

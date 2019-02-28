@@ -4,7 +4,10 @@ class Code extends Component {
 
     render() {
         return (
-            <div>Code</div>
+            <div>
+                <p>I like to write code.</p>
+                <p>My go-to languages are JavaScript and Python, with JavaScript being my favorite.</p>
+            </div>
         )
     }
 }

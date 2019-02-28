@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Code from './pages/Code';
 import Photos from './pages/Photos';
+import Portfolio from './pages/Portfolio';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/code" component={Code} />
           <Route exact path="/photos" component={Photos} />
+          <Route exact path="/portfolio" component={Portfolio} />
         </div>
         
         <Footer className="footer"/>

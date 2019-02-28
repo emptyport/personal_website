@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const fs = require('fs');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -8,7 +9,16 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Images folder
+app.use('/images', express.static('images'));
+
 // API calls
+app.get('/api/listImages', (req, res) => {
+  files = fs.readdirSync('images');
+  res.send({ imgList: files });
+});
+
+
 app.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
