@@ -4,3 +4,12 @@ html, body, #root {
   padding: 0;
   font-family: sans-serif;
 }
+
+.photo-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.photo {
+  width: 100%;
+}

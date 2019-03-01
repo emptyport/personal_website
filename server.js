@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const sizeOf = require('image-size');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,8 +15,17 @@ app.use('/images', express.static('images'));
 
 // API calls
 app.get('/api/listImages', (req, res) => {
-  files = fs.readdirSync('images');
-  res.send({ imgList: files });
+  let files = fs.readdirSync('images');
+  let fileList = [];
+  files.map(img => {
+    let dimensions = sizeOf('images/'+img);
+    fileList.push({
+      filename: img,
+      width: dimensions.width,
+      height: dimensions.height
+    });
+  });
+  res.send({ imgList: fileList });
 });
 
 
