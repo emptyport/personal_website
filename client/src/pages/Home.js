@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 class Home extends Component {
 
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        This website is a work in progress and there isn't much here yet, but feel free to take a look around.
+      </div>
+    )
+  }
 
 }
 

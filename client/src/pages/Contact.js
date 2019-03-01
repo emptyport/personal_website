@@ -35,11 +35,22 @@ class Contact extends Component {
     
         this.setState({ responseToPost: body });
       };
+
     render() {
         return (
             <div>Contact
 
-    <p>{this.state.response}</p>
+    
+            </div>
+        )
+    }
+
+}
+
+export default Contact;
+
+/*
+<p>{this.state.response}</p>
         <form onSubmit={this.handleSubmit}>
           <p>
             <strong>Post to Server:</strong>
@@ -52,10 +63,4 @@ class Contact extends Component {
           <button type="submit">Submit</button>
         </form>
         <p>{this.state.responseToPost}</p>
-            </div>
-        )
-    }
-
-}
-
-export default Contact;
+        */
