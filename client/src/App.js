@@ -9,6 +9,9 @@ import Code from './pages/Code';
 import Photos from './pages/Photos';
 import Portfolio from './pages/Portfolio';
 
+// These are pages for me and require authentication
+import ImageUploader from './pages/ImageUploader';
+
 import './App.css';
 
 class App extends Component {
@@ -26,6 +29,8 @@ class App extends Component {
           <Route exact path="/code" component={Code} />
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/portfolio" component={Portfolio} />
+
+          <Route exact path="/upload" component={ImageUploader} />
         </div>
         
         <Footer className="footer"/>

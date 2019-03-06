@@ -2,8 +2,7 @@
 
 images/*
 
-
-
+config.json
 
 # dependencies
 node_modules
