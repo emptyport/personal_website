@@ -1,10 +1,9 @@
-const fs = require('fs');
 const multer = require('multer');
 const upload = multer({ dest: 'images/' });
 const calipers = require('calipers')('jpeg');
 const jimp = require('jimp');
 
-config = require('../config.json');
+const config = require('../config.json');
 
 const Pool = require('pg').Pool;
 const pool = new Pool({
@@ -13,7 +12,7 @@ const pool = new Pool({
   database: config.PG_DATABASE,
   password: config.PG_PASSWORD,
   port: config.PG_PORT
-})
+});
 
 const fileDir = 'images';
 const thumbnailDir = 'thumbnails';
@@ -53,7 +52,7 @@ module.exports = function(app) {
         }
 
         res.status(201).send('Image added successfully');
-      })
+      });
 
     });
     
