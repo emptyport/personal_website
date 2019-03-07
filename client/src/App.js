@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+// Here are the pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -13,6 +15,7 @@ import Portfolio from './pages/Portfolio';
 import WithAuth from './components/WithAuth';
 import ImageUploader from './pages/ImageUploader';
 import Login from './pages/Login';
+import Write from './pages/Write';
 
 import './App.css';
 
@@ -34,6 +37,7 @@ class App extends Component {
 
           <Route exact path="/upload" component={WithAuth(ImageUploader)} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/write" component={Write} />
         </div>
         
         <Footer className="footer"/>
