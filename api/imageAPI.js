@@ -3,16 +3,7 @@ const upload = multer({ dest: 'images/' });
 const calipers = require('calipers')('jpeg');
 const jimp = require('jimp');
 
-const config = require('../config.json');
-
-const Pool = require('pg').Pool;
-const pool = new Pool({
-  user: config.PG_USER,
-  host: config.PG_HOST,
-  database: config.PG_DATABASE,
-  password: config.PG_PASSWORD,
-  port: config.PG_PORT
-});
+const pool = require('../utils/pool').pool;
 
 const fileDir = 'images';
 const thumbnailDir = 'thumbnails';

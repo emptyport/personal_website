@@ -1,14 +1,17 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-require('./api/imageAPI')(app);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+
+require('./api/imageAPI')(app);
+require('./api/authentication')(app);
 
 // Images folder
 app.use('/images', express.static('images'));
