@@ -3,6 +3,8 @@ const upload = multer({ dest: 'images/' });
 const calipers = require('calipers')('jpeg');
 const jimp = require('jimp');
 
+const withAuth = require('../utils/middleware');
+
 const pool = require('../utils/pool').pool;
 
 const fileDir = 'images';
@@ -19,7 +21,7 @@ module.exports = function(app) {
     });
   });
 
-  app.post('/api/upload', upload.single('img'), (req, res) => {
+  app.post('/api/upload', withAuth, upload.single('img'), (req, res) => {
     imgTitle = req.body.title;
     imgAlt = req.body.alt;
     fullFilename = fileDir + '/' + req.file.filename;

@@ -10,6 +10,7 @@ import Photos from './pages/Photos';
 import Portfolio from './pages/Portfolio';
 
 // These are pages for me and require authentication
+import WithAuth from './components/WithAuth';
 import ImageUploader from './pages/ImageUploader';
 import Login from './pages/Login';
 
@@ -31,7 +32,7 @@ class App extends Component {
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/portfolio" component={Portfolio} />
 
-          <Route exact path="/upload" component={ImageUploader} />
+          <Route exact path="/upload" component={WithAuth(ImageUploader)} />
           <Route exact path="/login" component={Login} />
         </div>
         

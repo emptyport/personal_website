@@ -3,6 +3,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
+const withAuth = require('./utils/middleware');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -17,6 +19,11 @@ require('./api/authentication')(app);
 app.use('/images', express.static('images'));
 
 // API calls
+app.get('/checkToken', withAuth, function(req, res) {
+  res.sendStatus(200);
+});
+
+
 app.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
