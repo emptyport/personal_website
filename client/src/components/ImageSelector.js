@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class ImageSelector extends Component {
   render() {
     return (
-      <div>Image Selector</div>
+      <div className="writer-item">
+        Image Selector
+      </div>
     )
   }
 }

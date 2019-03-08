@@ -5,14 +5,23 @@ class Editor extends Component {
     super(props);
 
     this.state = {
-      text: ''
+      text: props.text
     }
+
+    this.handleTextChange = this.handleTextChange.bind(this);
+  }
+
+  handleTextChange = (event) => {
+    this.setState({
+      text: event.target.value
+    });
+    this.props.textCallback(event.target.value);
   }
 
   render() {
     return (
-      <div>
-        Editor
+      <div className="writer-item">
+        <textarea id="editor" value={this.state.text} onChange={this.handleTextChange} autoFocus></textarea>
       </div>
     )
   }
