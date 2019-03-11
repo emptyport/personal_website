@@ -11,18 +11,42 @@ class Write extends Component {
     super();
 
     let initialText = 
-`
-# New Post
+`# New Post
       
 Write something here
 `
     ;
 
     this.state = {
-      text: initialText
+      text: initialText,
+      title: ""
     }
 
     this.handleTextChange = this.handleTextChange.bind(this);
+    this.savePost = this.savePost.bind(this);
+    this.handleTitleChange = this.handleTitleChange.bind(this);
+  }
+
+  handleTitleChange = event => {
+    this.setState({
+      title: event.target.value
+    });
+  }
+
+  savePost = async () => {
+    let data = {
+      text: this.state.text,
+      title: this.state.title
+    }
+    const response = await fetch('/api/blog/new', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    const result = await response.text();
+    alert(result);
   }
 
   handleTextChange = (text) => {
@@ -33,11 +57,17 @@ Write something here
 
   render() {
     return (
-      <div className="blog-writer">
-        <Editor text={this.state.text} textCallback={this.handleTextChange} />
-        <Viewer text={this.state.text} />
-        <ImageSelector />
+      <div>
+        <button onClick={this.savePost}>Save</button>
+        <br />
+        Title:<input type="text" onChange={this.handleTitleChange}></input>
+        <div className="blog-writer">
+          <Editor text={this.state.text} textCallback={this.handleTextChange} />
+          <Viewer text={this.state.text} />
+          <ImageSelector />
+        </div>
       </div>
+      
     )
   }
 

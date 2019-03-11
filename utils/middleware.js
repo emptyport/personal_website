@@ -14,10 +14,12 @@ const withAuth = function(req, res, next) {
   else {
     jwt.verify(token, secret, function(err, decoded) {
       if(err) {
+        console.log('Invalid token');
         res.status(401).send('Unauthorized: Invalid token');
       }
       else {
         req.username = decoded.username;
+        console.log('Permitting ' + req.username + ' to proceed');
         next();
       }
     });

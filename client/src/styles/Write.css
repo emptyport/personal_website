@@ -1,9 +1,10 @@
 .blog-writer {
     display: grid;
-    grid-template-columns: 1fr 1fr 20%;
+    grid-template-columns: 1fr 1fr 200px;
     grid-column-gap: 5px;
     height: 100%;
     margin: 0px 5px 0px 5px;
+    max-height: 100%;
 }
 
 #editor {
@@ -19,8 +20,14 @@
 
 .writer-item {
     border: 1px solid black;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .writer-item img {
     width: 100%;
+}
+
+#image-selector {
+    overflow-y: scroll;
 }

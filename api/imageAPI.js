@@ -12,6 +12,17 @@ const thumbnailDir = 'thumbnails';
 
 module.exports = function(app) {
 
+  app.get('/api/fetchAllImages', (req, res) => {
+    pool.query('SELECT * FROM images', (error, results) => {
+      if(error) {
+        console.error(error);
+        res.status(401).send(error);
+        return;
+      }
+      res.status(200).send({ images: results.rows });
+    });
+  });
+
   app.get('/api/listImages', (req, res) => {
     pool.query('SELECT * FROM images WHERE display = $1', ["yes"], (error, result) => {
       if(error) {
