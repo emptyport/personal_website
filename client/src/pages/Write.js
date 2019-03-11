@@ -62,9 +62,15 @@ Write something here
         <br />
         Title:<input type="text" onChange={this.handleTitleChange}></input>
         <div className="blog-writer">
-          <Editor text={this.state.text} textCallback={this.handleTextChange} />
-          <Viewer text={this.state.text} />
-          <ImageSelector />
+          <div className="writer-item">
+            <Editor text={this.state.text} textCallback={this.handleTextChange} />
+          </div>
+          <div className="writer-item">
+            <Viewer text={this.state.text} />
+          </div>
+          <div className="writer-item">
+            <ImageSelector />
+          </div>
         </div>
       </div>
       

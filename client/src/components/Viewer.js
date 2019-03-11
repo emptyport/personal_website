@@ -14,7 +14,7 @@ class Viewer extends Component {
 
   render() {
     return (
-      <div className="writer-item" dangerouslySetInnerHTML={this.convertMarkdown()} />  
+      <div dangerouslySetInnerHTML={this.convertMarkdown()} />  
     )
   }
 }

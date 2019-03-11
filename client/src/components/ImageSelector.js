@@ -30,7 +30,7 @@ class ImageSelector extends Component {
   
   render() {
     return (
-      <div className="writer-item">
+      <div>
         <div id="image-selector">
           {this.state.images.map((img, index) => {
             return (

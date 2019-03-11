@@ -1,0 +1,10 @@
+.blog-item {
+    margin: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.blog-item div p img {
+    width: 100%;
+}
