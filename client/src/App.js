@@ -41,7 +41,7 @@ class App extends Component {
 
           <Route exact path="/upload" component={WithAuth(ImageUploader)} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/write" component={Write} />
+          <Route exact path="/write" component={WithAuth(Write)} />
         </div>
         
         <Footer className="footer"/>
