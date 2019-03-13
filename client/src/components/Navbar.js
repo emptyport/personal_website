@@ -7,7 +7,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div id="navbar">
+      <div className="nav" id="navbar">
           <NavLink exact to="/">Home</NavLink>
           <NavLink exact to="/about">About</NavLink>
           <NavLink exact to="/code">Code</NavLink>

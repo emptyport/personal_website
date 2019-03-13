@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar className="nav"/>
+        <Navbar />
         
         <div className="content">
           <Route exact path="/" component={Home} />
@@ -44,7 +44,7 @@ class App extends Component {
           <Route exact path="/write" component={WithAuth(Write)} />
         </div>
         
-        <Footer className="footer"/>
+        <Footer/>
       </div>
     );
   }

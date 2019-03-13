@@ -4,7 +4,7 @@ import Social from './Social';
 class Footer extends Component {
     render() {
         return (
-            <div>
+            <div className="footer">
                 <Social />
             </div>
         )

@@ -4,3 +4,33 @@
   grid-template-columns: 100%;
   grid-template-rows: 50px 1fr 20px;
 }
+
+@media (max-width: 500px) {
+  .App {
+    display: grid;
+    grid-template-areas:
+      'navbar content'
+      'navbar content'
+      'footer footer';
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 40px 1fr;
+
+    height: 100vh;
+  }
+
+  #navbar {
+    grid-area: navbar;
+    flex-direction: column;
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}

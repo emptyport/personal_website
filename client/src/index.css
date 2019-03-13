@@ -29,3 +29,10 @@ html, body, #root {
 .body-title {
   font-size: 3em;
 }
+
+@media (max-width: 500px) {
+  .body-text {
+    font-size: 1em;
+    margin: 40px;
+  }
+}

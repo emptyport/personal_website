@@ -20,3 +20,13 @@
     color: rgb(112, 112, 112);
     font-size: 2em;
 }
+
+@media (max-width: 500px) {
+    .number-container {
+        flex-direction: column;
+    }
+
+    .number-source {
+        margin-bottom: 20px;
+    }
+}
