@@ -15,6 +15,7 @@ app.use(cookieParser());
 require('./api/imageAPI')(app);
 require('./api/authentication')(app);
 require('./api/blog')(app);
+require('./api/code')(app);
 
 // Images folder
 app.use('/images', express.static('images'));

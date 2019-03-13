@@ -36,8 +36,10 @@ class Article extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.title}</h1>
-        <Viewer text={this.state.text} />
+        <h1 className="body-text body-title">{this.state.title}</h1>
+        <div className="body-text">
+          <Viewer text={this.state.text} />
+        </div>
       </div>
     )
   }

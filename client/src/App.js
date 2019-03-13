@@ -37,7 +37,7 @@ class App extends Component {
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/blog" component={Blog} />
-          <Route path="/blog/:id" component={Article} />
+          <Route exact path="/blog/:id" component={Article} />
 
           <Route exact path="/upload" component={WithAuth(ImageUploader)} />
           <Route exact path="/login" component={Login} />

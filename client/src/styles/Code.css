@@ -1,0 +1,22 @@
+.number-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-number {
+    flex: 1;
+    text-align: center;
+}
+
+.count {
+    color: rgb(0, 196, 88);
+    font-size: 4.5em;
+    margin: 0px;
+}
+
+.number-source {
+    color: rgb(112, 112, 112);
+    font-size: 2em;
+}
