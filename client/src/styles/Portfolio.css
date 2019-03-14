@@ -29,6 +29,11 @@
     margin-top: 15px;
 }
 
+.portfolio-item-link {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media (max-width: 600px) {
     .portfolio-item-title {
         font-size: 1.4em;
@@ -41,6 +46,11 @@
     }
 
     .portfolio-item-description {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .portfolio-item-link {
         margin-left: 5%;
         margin-right: 5%;
     }
