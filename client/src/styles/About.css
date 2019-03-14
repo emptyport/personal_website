@@ -21,7 +21,7 @@
     background-color: red;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     #about {
         font-size: 2em;

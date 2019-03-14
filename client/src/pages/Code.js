@@ -11,9 +11,7 @@ class Code extends Component {
       npm_username: 'emptyport',
       github_repos: 39,
       github_username: 'emptyport'
-    }
-
-    
+    }    
   }
 
   render() {
@@ -22,12 +20,12 @@ class Code extends Component {
         <div className="number-container">
           <div className="big-number">
             <h1 className="count">39</h1>
-            <div className="number-source">GitHub repos</div>
+            <div className="number-source"><a href="https://www.github.com/emptyport">GitHub repos</a></div>
           </div>
 
           <div className="big-number">
             <h1 className="count">12</h1>
-            <div className="number-source">npm packages</div>
+            <div className="number-source"><a href="https://www.npmjs.org/~emptyport">npm packages</a></div>
           </div>
         </div>
 
