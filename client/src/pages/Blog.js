@@ -4,10 +4,7 @@ import Viewer from '../components/Viewer';
 import '../styles/Blog.css';
 
 class BlogItem extends Component {
-  constructor(props) {
-    super(props);
-
-  }
+  
   render() {
     return (
       <div className="blog-item">

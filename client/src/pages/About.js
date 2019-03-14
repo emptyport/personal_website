@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     return (
       <div id="about">
-        <img id="spider-pic" src={SpiderPortrait} />
+        <img id="spider-pic" src={SpiderPortrait} alt="Mike holding a tarantual and pretending to yell"/>
         <ul className="about-list">
           <li>
             I like coding
@@ -24,7 +24,7 @@ class About extends Component {
             I like bugs
           </li>
         </ul>
-        <img id="science-pic" src={SciencePortrait} />
+        <img id="science-pic" src={SciencePortrait} alt="Mike wearing a shirt that says to stand back because he is going to try science" />
       </div>
     )
   }
