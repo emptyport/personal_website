@@ -1,0 +1,11 @@
+#home {
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-item {
+    margin-bottom: 20px;
+}

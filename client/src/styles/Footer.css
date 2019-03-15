@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyright {
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+}

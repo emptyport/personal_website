@@ -16,6 +16,7 @@ require('./api/imageAPI')(app);
 require('./api/authentication')(app);
 require('./api/blog')(app);
 require('./api/code')(app);
+require('./api/contact')(app);
 
 // Images folder
 app.use('/images', express.static('images'));
@@ -23,18 +24,6 @@ app.use('/images', express.static('images'));
 // API calls
 app.get('/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
-});
-
-
-app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
-});
-
-app.post('/api/world', (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.post}`,
-  );
 });
 
 if (process.env.NODE_ENV === 'production') {
