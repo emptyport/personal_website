@@ -8,7 +8,7 @@ class BlogItem extends Component {
   render() {
     return (
       <div className="blog-item">
-        <h1><a href={"/blog/"+(parseInt(this.props.id)+1)}>{this.props.title}</a></h1>
+        <h1><a href={"/blog/"+(parseInt(this.props.id))}>{this.props.title}</a></h1>
         <Viewer text={this.props.text.substring(0, 100)} />
       </div>
     )
@@ -42,8 +42,8 @@ class Blog extends Component {
   render() {
     return (
       <div>
-        {this.state.posts.map((post, index) => {
-          return <BlogItem title={post.title} text={post.text} key={index} id={index} />
+        {this.state.posts.map(post => {
+          return <BlogItem title={post.title} text={post.text} key={post.id} id={post.id} />
         })}
       </div>
     )

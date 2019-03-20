@@ -1,3 +1,7 @@
+#write {
+    height: 100%;
+}
+
 .blog-writer {
     display: grid;
     grid-template-columns: 1fr 1fr 200px;

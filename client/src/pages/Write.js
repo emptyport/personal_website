@@ -57,7 +57,7 @@ Write something here
 
   render() {
     return (
-      <div>
+      <div id="write">
         <button onClick={this.savePost}>Save</button>
         <br />
         Title:<input type="text" onChange={this.handleTitleChange}></input>
