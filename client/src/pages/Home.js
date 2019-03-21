@@ -7,10 +7,9 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
-        <div className="home-item">Hello!</div>
-        <div className="home-item">My name is Michael Porter and this is my website!</div>
-        <div className="home-item">The entire website is built from the ground up with love. If things look a little plain, that's because 1) it's still a work in progress and 2) I'm still learning.</div>
-        <div className="home-item">I tend to think of myself as an interesting person, so we'll see if you think the same about me after having a look around.</div>
+        <h1 className="home-item">Hey!</h1>
+        <h2 className="home-item">My name is Michael Porter and this is my website!</h2>
+        
       </div>
     )
   }

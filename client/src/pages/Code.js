@@ -9,7 +9,7 @@ class Code extends Component {
     this.state = {
       npm_packages: 12,
       npm_username: 'emptyport',
-      github_repos: 39,
+      github_repos: 40,
       github_username: 'emptyport'
     }    
   }
@@ -19,12 +19,12 @@ class Code extends Component {
       <div id="code">
         <div className="number-container">
           <div className="big-number">
-            <h1 className="count">39</h1>
+            <h1 className="count">{this.state.github_repos}</h1>
             <div className="number-source"><a href="https://www.github.com/emptyport">GitHub repos</a></div>
           </div>
 
           <div className="big-number">
-            <h1 className="count">12</h1>
+            <h1 className="count">{this.state.npm_packages}</h1>
             <div className="number-source"><a href="https://www.npmjs.org/~emptyport">npm packages</a></div>
           </div>
         </div>

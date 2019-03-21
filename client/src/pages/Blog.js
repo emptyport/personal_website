@@ -8,8 +8,10 @@ class BlogItem extends Component {
   render() {
     return (
       <div className="blog-item">
-        <h1><a href={"/blog/"+(parseInt(this.props.id))}>{this.props.title}</a></h1>
-        <Viewer text={this.props.text.substring(0, 100)} />
+        <h1 className="blog-item-title"><a className="blog-item-title-link" href={"/blog/"+(parseInt(this.props.id))}>{this.props.title}</a></h1>
+        <div className="hr"></div>
+        <Viewer text={this.props.text.substring(0, 100)+"..."} />
+        <a className="a-button" href={"/blog/"+(parseInt(this.props.id))}>Read more</a>
       </div>
     )
   }
