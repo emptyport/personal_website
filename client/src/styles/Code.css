@@ -1,3 +1,7 @@
+#code {
+    height: 100%;
+}
+
 .number-container {
     margin-top: 50px;
     display: flex;
