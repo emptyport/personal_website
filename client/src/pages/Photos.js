@@ -1,17 +1,64 @@
 import React, { Component } from 'react';
-import PhotoItem from '../components/PhotoItem';
+import Gallery from 'react-photo-gallery';
+import Lightbox from 'react-images';
 
 class Photos extends Component {
 
-  state = {
-    photoList: []
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      photoList: [],
+      currentImage: 0
+    };
+
+    this.closeLightbox = this.closeLightbox.bind(this);
+    this.openLightbox = this.openLightbox.bind(this);
+    this.gotoNext = this.gotoNext.bind(this);
+    this.gotoPrevious = this.gotoPrevious.bind(this);
+    this.gotoImage = this.gotoImage.bind(this);
+  }
+
+  openLightbox(event, obj) {
+    this.setState({
+      currentImage: obj.index,
+      lightboxIsOpen: true,
+    });
+  }
+  closeLightbox() {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    });
+  }
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    });
+  }
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    });
+  }  
+  gotoImage(index) {
+    this.setState({
+      currentImage: index
+    });
+  }
   
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ 
-        photoList: res.imgList 
-      }))
+      .then(res => {
+        let photos = res.imgList.map(img => {
+          img.src = '/images/'+img.filename;
+          img.thumbnail = '/images/thumbnails/'+img.filename;
+          return img;
+        });
+        this.setState({ 
+          photoList: photos 
+        });
+      })
       .catch(err => console.log(err));
   }
   
@@ -20,6 +67,7 @@ class Photos extends Component {
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
+
     return body;
   };
 
@@ -32,9 +80,19 @@ class Photos extends Component {
           <div>Super fancy loading message</div>
         }
 
-        {this.state.photoList.map((img, index) => {
-          return <PhotoItem key={index} imgSrc={img} />
-        })}
+        <Gallery 
+          photos={this.state.photoList} 
+          onClick={this.openLightbox} 
+        />
+        <Lightbox images={this.state.photoList}
+          onClose={this.closeLightbox}
+          onClickPrev={this.gotoPrevious}
+          onClickNext={this.gotoNext}
+          currentImage={this.state.currentImage}
+          isOpen={this.state.lightboxIsOpen}
+          showThumbnails={true}
+          onClickThumbnail={this.gotoImage}
+        />
       </div>
     )
   }
