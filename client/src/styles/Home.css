@@ -4,9 +4,8 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    background-color: #CF3721;
-    color: white;
+    color: #CF3721;
+    background-color: white;
     height: 100%;
     font-family: 'Nunito';
 }

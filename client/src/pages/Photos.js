@@ -53,6 +53,7 @@ class Photos extends Component {
         let photos = res.imgList.map(img => {
           img.src = '/images/'+img.filename;
           img.thumbnail = '/images/thumbnails/'+img.filename;
+          img.caption = img.alt;
           return img;
         });
         this.setState({ 
