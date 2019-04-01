@@ -8,15 +8,25 @@
     background-color: white;
     height: 100%;
     font-family: 'Nunito';
+    align-items: center;
 }
 
 .home-item {
     margin-bottom: 20px;
 }
 
+#home-video {
+    width: 50%;
+    max-height: 600px;
+}
+
 @media (max-width: 600px) {
     #home {
         margin-top: 0px;
         font-size: 1em;
+    }
+
+    #home-video {
+        width: 100%;
     }
 }
