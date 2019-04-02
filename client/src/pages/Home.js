@@ -12,7 +12,7 @@ class Home extends Component {
       <div id="home">
         <h1 className="home-item">Hey!</h1>
         <h2 className="home-item">My name is Michael Porter and this is my website!</h2>
-        <video id="home-video" autoPlay loop>
+        <video id="home-video" autoPlay muted loop>
           <source src={earthVid} type="video/mp4" />
           Your browser does not support this video :(
         </video>

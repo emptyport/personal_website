@@ -75,10 +75,10 @@ class Photos extends Component {
   render() {
     return (
       <div className="photo-container">
-        <p>These are a few of the photographs I've taken. I strongly favor macro photography of insects and spiders and other small creatures and whatever else suits my fancy.</p>
+        <p className="body-text">These are a few of the photographs I've taken. I strongly favor macro photography of insects and spiders and other small creatures and whatever else suits my fancy.</p>
 
         {this.state.photoList.length === 0 &&
-          <div>Super fancy loading message</div>
+          <div className="body-text">Super fancy loading message</div>
         }
 
         <Gallery 

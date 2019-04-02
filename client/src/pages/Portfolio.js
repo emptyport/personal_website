@@ -3,6 +3,12 @@ import PortfolioItem from '../components/PortfolioItem';
 
 import '../styles/Portfolio.css';
 
+// Scorpion Poster
+const scorpionImage = require('../image_assets/scorpion_poster_final_updated.jpg');
+const scorpionAlt = "Research poster on scorpion fluorescence";
+const scorpionTitle = "Scorpion Fluorescence Research Poster";
+const scorpionDescription = "For much of my time at BYU I did research on scorpion fluorescence, or their ability to 'glow' under a blacklight. I made this research poster to present our research and won first prize in a poster competition hosted by the university's library. This poster was very much a collaborative project. Jeff Macedone, my primary mentor on the project, taught me a lot about keeping the word count and jargon to a minimum to attract viewers and capturing attention with striking graphics. But at the same time we needed enough information to communicate what we did and what we found out. Unfortunately we weren't able to get a paper published because we ended up having too few data points to account for all the assorted variables. Hopefully this project will get finished out someday though.";
+
 // Dissidence
 const dissidenceLink = "https://dissidence-reno.netlify.com";
 const dissidenceImage = require('../image_assets/dissidence_screenshot.png');
@@ -38,6 +44,14 @@ class Portfolio extends Component {
     return (
       <div id="portfolio">
 
+        <PortfolioItem
+          title={scorpionTitle}
+          image={scorpionImage}
+          link={scorpionImage}
+          alt={scorpionAlt}
+          description={scorpionDescription}
+        />
+
         <PortfolioItem 
           title={oldTitle}
           image={oldImage}
@@ -65,6 +79,7 @@ class Portfolio extends Component {
         <PortfolioItem 
           title={aimsBrochureTitle}
           image={aimsBrochureImage}
+          link={aimsBrochureImage}
           alt={aimsBrochureAlt}
           description={aimsBrochureDescription} 
         />

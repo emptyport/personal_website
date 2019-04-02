@@ -17,7 +17,7 @@
 
 #home-video {
     width: 50%;
-    max-height: 600px;
+    max-height: 500px;
 }
 
 @media (max-width: 600px) {

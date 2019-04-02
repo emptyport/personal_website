@@ -37,13 +37,7 @@ class Code extends Component {
             My go-to languages are JavaScript and Python, with JavaScript being my favorite.
           </p>
           <p>
-            My passion projects are all bioinformatics related. All my npm modules actually have to do with proteomics.
-          </p>
-          <p>
             Part of why I created this website (besides the sheer fun of doing it) was to showcase my skills as a developer. I worked in a development role for about 7 months while I was at Qualtrics, but it's been a few years. This site is built with a Nodejs and PostgreSQL backend with a React frontend. I wrote the CMS myself and while crude, it gets the job done.
-          </p>
-          <p>
-            My CSS skills aren't exactly great so that's why the site (for now) is pretty plain. I also like the plain look so I might just leave it.
           </p>
         </div>
         
