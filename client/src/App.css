@@ -36,6 +36,7 @@
   }
 
   .footer {
+    left: 0;
     grid-area: footer;
     justify-self: center;
     position: fixed;
