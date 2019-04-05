@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const withAuth = require('./utils/middleware');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,6 +26,8 @@ app.get('/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
 });
 
+app.use(express.static(path.join(__dirname, 'client/public')));
+/*
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
@@ -36,5 +38,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
 }
+*/
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

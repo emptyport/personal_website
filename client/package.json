@@ -1,28 +1,19 @@
 {
-  "name": "create-react-app-express",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "hexo": {
+    "version": "3.8.0"
+  },
   "dependencies": {
-    "marked": "^0.6.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-images": "^0.5.19",
-    "react-lazy-load": "^3.0.13",
-    "react-photo-gallery": "^6.3.2",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "proxy": "http://localhost:5000/",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "hexo": "^3.2.0",
+    "hexo-generator-archive": "^0.1.4",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-renderer-ejs": "^0.3.0",
+    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-renderer-marked": "^0.3.0",
+    "hexo-server": "^0.2.0"
+  }
 }
