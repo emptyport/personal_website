@@ -26,7 +26,7 @@ app.get('/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
 });
 
-app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(express.static(path.join(__dirname, 'client/_site')));
 /*
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files

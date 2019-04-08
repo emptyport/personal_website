@@ -1,0 +1,55 @@
+---
+---
+
+html, body {
+  height: 100%;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.navbar-brand
+{
+  height: 100%;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+}
+
+#mapid {
+  height: 200px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+.no-js img.lazyload {
+  display: none;
+}
+  
+.blur-up {
+  filter: blur(10px);
+  transition: filter 400ms;
+}
+  
+.blur-up.lazyloaded {
+  filter: blur(0);
+}
+  
+.fade-in {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+  
+.fade-in.lazyloaded {
+  opacity: 1;
+}
