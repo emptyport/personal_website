@@ -1,0 +1,28 @@
+$nav-height: 30px;
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $nav-height;
+}
+
+.nav-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item {
+    height: $nav-height;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+}

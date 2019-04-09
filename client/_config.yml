@@ -1,5 +1,4 @@
-title: Your awesome title
-email: your-email@example.com
+title: It's Mike!
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -10,11 +9,11 @@ include: ["_pages"]
 
 lang: en_US
 
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: MikeTheBiochem
+github_username:  emptyport
 
 twitter:
-  username: ''
+  username: MikeTheBiochem
   card: summary
 
 facebook:
@@ -23,14 +22,11 @@ facebook:
   admins: ''
 
 social:
-  name: Example
+  name: Michael Porter
   links:
-    - https://twitter.com/
-    - https://www.facebook.com/
-    - https://www.linkedin.com/in/
-    - https://plus.google.com/
-    - https://github.com/
-    - https://keybase.io/
+    - https://twitter.com/MikeTheBiochem
+    - https://www.linkedin.com/in/mtporter
+    - https://github.com/emptyport
 
 webmaster_verifications:
   google: ''
@@ -55,8 +51,8 @@ sass:
 
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-102894893-3      # Required - replace with your tracking id
-    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+    id: UA-137935194-1      # Required - replace with your tracking id
+    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
 
 # Responsive images
 responsive_image:

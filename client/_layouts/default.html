@@ -5,10 +5,12 @@
 
   <script src="/js/external/lazysizes.min.js" async=""></script>
 
-  <body class="bg-dark">
+  <body>
     {% include navbar.html %}
 
-    {{ content }}
+    <div id="page-content">
+      {{ content }}
+    </div>
 
 
     {% include footer.html %}
