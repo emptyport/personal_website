@@ -1,0 +1,43 @@
+#Connect {
+    display: flex;
+}
+
+.connect-subsection {
+    flex: 1 1 auto;
+}
+
+.social-subsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-card {
+    flex: 1 1 auto;
+}
+
+#connect-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    flex: 1 1 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.form-input {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.form-button {
+    text-align: center;
+}
