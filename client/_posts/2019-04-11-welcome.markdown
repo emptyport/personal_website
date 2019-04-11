@@ -1,0 +1,10 @@
+---
+layout: single_post
+title:  "Welcome to My Blog!"
+date:   2019-04-11 15:45:00 -0500
+categories: update
+author: Michael Porter
+---
+Welcome to my website! I have a wide range of interests in design, programming, photography, and science. This site will definitely be evolving over time as I iron out the wrinkles.
+
+Thanks for stopping by!
