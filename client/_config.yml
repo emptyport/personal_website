@@ -43,17 +43,11 @@ markdown: kramdown
 
 plugins:
   - jekyll-responsive-image
-  - jekyll-analytics
   - jekyll-sitemap
   - jekyll-seo-tag
 
 sass:
   sass_dir: css
-
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-137935194-1      # Required - replace with your tracking id
-    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
 
 # Responsive images
 responsive_image:

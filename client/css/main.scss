@@ -5,6 +5,7 @@
 @import 'navbar';
 @import 'connect';
 @import 'icomoon';
+@import 'nunito_sans';
 
 html, body {
   height: 100%;
@@ -15,4 +16,5 @@ html, body {
 
 #page-content {
   padding-top: 30px;
+  height: 100%;
 }

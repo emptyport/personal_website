@@ -9,11 +9,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "client": "cd client && bundle && bundle exec jekyll build --watch --incremental",
+    "client": "cd client && bundle && JEKYLL_ENV=development bundle exec jekyll build --watch --incremental",
     "server": "nodemon server.js",
     "dev": "NODE_ENV='development' concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "NODE_ENV='production' nodemon server.js",
-    "build": "cd client && bundle && jekyll build && cd .. && npm install"
+    "build": "cd client && bundle && JEKYLL_ENV=production bundle exec jekyll build && cd .. && npm install"
   },
   "dependencies": {
     "bcrypt": "^3.0.4",
@@ -25,6 +25,7 @@
     "jimp": "^0.6.0",
     "jsonwebtoken": "^8.5.0",
     "multer": "^1.4.1",
+    "nodemailer": "^6.1.0",
     "pg": "^7.8.1",
     "prompt": "^1.0.0"
   },

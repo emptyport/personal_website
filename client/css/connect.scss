@@ -1,9 +1,11 @@
 #Connect {
-    display: flex;
+    display: grid;
+    height: auto;
+    align-items: center;
+    grid-template-columns: 50% 50%;
 }
 
 .connect-subsection {
-    flex: 1 1 auto;
 }
 
 .social-subsection {
@@ -13,6 +15,23 @@
 
 .social-card {
     flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 33% auto;
+    margin: 10px;
+}
+
+.social-card-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+.social-card-text {
+    align-self: center;
+    justify-self: left;
+}
+
+.social-icon {
+    font-size: 4em;
 }
 
 #connect-form {
