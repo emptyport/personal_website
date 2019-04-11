@@ -1,4 +1,4 @@
-#Connect {
+.connect {
     display: grid;
     height: auto;
     align-items: center;
@@ -59,4 +59,18 @@
 
 .form-button {
     text-align: center;
+}
+
+@media(max-width: 600px) {
+    .connect {
+        display: grid;
+        height: auto;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #connect-form {
+        width: 90%;
+    }
 }

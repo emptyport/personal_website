@@ -6,6 +6,7 @@ nav {
     top: 0;
     width: 100%;
     height: $nav-height;
+    background-color: white;
 }
 
 .nav-list {
@@ -25,5 +26,6 @@ nav {
 }
 
 .nav-link {
+    color: black;
     text-decoration: none;
 }
