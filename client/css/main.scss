@@ -24,6 +24,17 @@ html, body {
   margin-right: 20px;
 }
 
+#body-content {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.blur-up {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
 .active {
   border-bottom: 2px solid red;
 }
@@ -34,6 +45,32 @@ html, body {
   font-family: 'nunito_sans_extralight';
   font-size: 5em;
   color: red;
+}
+
+footer {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.footer-item {
+  flex: 1 1 auto;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
 }
 
 @media (max-width: 600px) {

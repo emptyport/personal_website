@@ -28,6 +28,8 @@
 .social-card-text {
     align-self: center;
     justify-self: left;
+    padding-left: 20px;
+    border-left: 5px solid red;
 }
 
 .social-icon {
@@ -38,6 +40,10 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#connect-message {
+    height: 200px;
 }
 
 .form-row {
@@ -55,10 +61,14 @@
 .form-input {
     flex: 1 1 auto;
     width: 100%;
+    border: 2px solid black;
 }
 
 .form-button {
     text-align: center;
+    border: 2px solid black;
+    font-size: 1.1em;
+    background-color: white;
 }
 
 @media(max-width: 600px) {
