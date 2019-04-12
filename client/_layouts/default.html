@@ -8,12 +8,14 @@
   <body>
     {% include navbar.html %}
 
-    <div id="page-content">
-      {{ content }}
+    <div id="body-content">
+      <div id="page-content">
+        {{ content }}
+      </div>
+    
+      {% include footer.html %}
     </div>
 
-
-    {% include footer.html %}
     
     <script>
       document.getElementById("{{ page.title }}").classList.add("active");
