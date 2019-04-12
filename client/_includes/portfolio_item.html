@@ -1,0 +1,12 @@
+<div class="portfolio-item">
+    <h1 class="portfolio-item-title">{{include.title}}</h1>
+
+    {% responsive_image_block %}
+        path: {{include.image}}
+        alt: {{include.alt}}
+    {% endresponsive_image_block %}
+    
+    <div class="portfolio-item-link"><a href={{include.link}}>Check it out here</a></div>
+
+    <div class="portfolio-item-description">{{include.description}}</div>
+</div>  

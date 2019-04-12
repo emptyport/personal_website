@@ -1,0 +1,71 @@
+---
+permalink: "/connect/"
+layout: default
+title: Connect
+---
+
+<div class="connect">
+
+    <div class="connect-subsection social-subsection">
+        {% include social_card.html
+            icon-class="github"
+            text="If you're interested in seeing what sort of programming projects I'm working on, <a href='https://github.com/emptyport'>check out my Github profile!</a>"
+        %}
+        {% include social_card.html
+            icon-class="twitter"
+            text="If you want to see what miscellaneous stuff I'm up to online, <a href='https://twitter.com/MikeTheBiochem'>you can follow me on Twitter @MikeTheBiochem.</a>"
+        %}
+        {% include social_card.html
+            icon-class="linkedin"
+            text="For a more professional view of me and my experience, you can also <a href='https://www.linkedin.com/in/mtporter/'>find me on LinkedIn.</a>"
+        %}
+        {% include social_card.html
+            icon-class="instagram"
+            text="And lastly, you can check out some of my sporadically posted photos and other artwork <a href='https://www.instagram.com/drumchump/'>over on Instagram.</a>"
+        %}
+        
+    </div>
+
+    <div class="connect-subsection">
+        <form action="/api/contact" method="post" id="connect-form">
+            <div class="form-row">If you'd like to get in touch via email, fill out the form and I'll get back to you as soon as I can!</div>
+            <div class="form-row">
+                <label class="form-label" for="connect-firstname">First name:</label>
+                <input class="form-input" type="text" id="connect-firstname" name="firstname">
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="connect-lastname">Last name:</label>
+                <input class="form-input" type="text" id="connect-lastname" name="lastname">
+            </div>        
+
+            <div class="form-row">
+                <label class="form-label" for="connect-email">Email:</label>
+                <input class="form-input" type="text" id="connect-email" name="email">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label" for="connect-message">Comments/questions:</label>
+                <textarea class="form-input" id="connect-message" name="message"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label" for="connect-trial">What is 2 + 2?</label>
+                <input class="form-input" type="text" id="connect-trial" name="trial">
+            </div>
+            
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>

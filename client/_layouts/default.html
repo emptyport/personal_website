@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+  {% include head.html %}
+
+  <script src="/js/external/lazysizes.min.js" async=""></script>
+
+  <body>
+    {% include navbar.html %}
+
+    <div id="page-content">
+      {{ content }}
+    </div>
+
+
+    {% include footer.html %}
+    
+    <script>
+      document.getElementById("{{ page.title }}").classList.add("active");
+    </script>
+  </body>
+</html>

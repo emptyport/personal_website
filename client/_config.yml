@@ -1,0 +1,68 @@
+title: It's Mike!
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://michaelporter.dev" # the base hostname & protocol for your site, e.g. http://example.com
+include: ["_pages"]
+permalink: /blog/:title/
+
+lang: en_US
+
+twitter_username: MikeTheBiochem
+github_username:  emptyport
+
+twitter:
+  username: MikeTheBiochem
+  card: summary
+
+facebook:
+  app_id: ''
+  publisher: ''
+  admins: ''
+
+social:
+  name: Michael Porter
+  links:
+    - https://twitter.com/MikeTheBiochem
+    - https://www.linkedin.com/in/mtporter
+    - https://github.com/emptyport
+
+webmaster_verifications:
+  google: ''
+  bing: ''
+  alexa: ''
+  yandex: ''
+  baidu: '' 
+
+logo: ""
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-responsive-image
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: css
+
+# Responsive images
+responsive_image:
+  template: _includes/responsive-image.html
+  default_quality: 90
+  sizes:
+    - width: 20 # lq
+      quality: 10
+    - width: 480
+      quality: 80
+    - width: 800
+    - width: 1400
+  auto_rotate: false
+  strip: true
+  base_path: images
+  output_path_format: images/resized/%{width}/%{basename}
+  save_to_source: false
+  cache: false

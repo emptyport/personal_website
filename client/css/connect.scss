@@ -1,0 +1,76 @@
+.connect {
+    display: grid;
+    height: auto;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+
+.connect-subsection {
+}
+
+.social-subsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-card {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 33% auto;
+    margin: 10px;
+}
+
+.social-card-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+.social-card-text {
+    align-self: center;
+    justify-self: left;
+}
+
+.social-icon {
+    font-size: 4em;
+}
+
+#connect-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    flex: 1 1 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.form-input {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.form-button {
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .connect {
+        display: grid;
+        height: auto;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #connect-form {
+        width: 90%;
+    }
+}
