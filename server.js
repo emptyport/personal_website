@@ -14,4 +14,8 @@ require('./api/contact')(app);
 
 app.use(express.static(path.join(__dirname, 'client/_site')));
 
+app.get('*', function(req, res){
+  res.sendFile(path.join(__dirname, './client/_site', '404', 'index.html'), 404);
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
