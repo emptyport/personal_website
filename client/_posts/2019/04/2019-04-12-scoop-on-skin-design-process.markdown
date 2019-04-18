@@ -1,9 +1,10 @@
 ---
 layout: single_post
-title:  "Design Process: Scoop on Skin podcast logo"
+title:  "Design Process: 'Scoop on Skin' podcast logo"
 date:   2019-04-12 15:08:00 -0500
 categories: design behind-the-scenes
 author: Michael Porter
+description: This is a behind-the-scenes look at the design process for a logo I made.
 ---
 I love seeing how things are made, so for this post I thought I'd give a behind-the-scenes look at a logo I made.
 

@@ -4,6 +4,7 @@ title:  "Welcome to My Blog!"
 date:   2019-04-11 15:45:00 -0500
 categories: update
 author: Michael Porter
+description: This is just an introductory post.
 ---
 Welcome to my website! I have a wide range of interests in design, programming, photography, and science. This site will definitely be evolving over time as I iron out the wrinkles.
 

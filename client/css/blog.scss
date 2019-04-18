@@ -1,11 +1,14 @@
 .blog {
     max-width: 600px;
+    width: 100%;
     margin: auto;
     display: block;
 }
 
 .blog-img {
     max-height: 500px;
+    max-width: 600px;
+    height: auto;
     width: auto;
     margin: auto;
     display: block;
