@@ -16,6 +16,7 @@ module.exports = function(app) {
       <p>${req.body.email}</p>
     `;
 
+    /*
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -23,11 +24,25 @@ module.exports = function(app) {
         pass: config.EM_PASSWORD
       }
     });
+    */
+
+    let transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        type: 'OAuth2',
+        user: config.EM_USERNAME,
+        clientId: config.EM_CLIENTID,
+        clientSecret: config.EM_CLIENTSECRET,
+        refreshToken: config.EM_REFRESHTOKEN,
+        accessToken: config.EM_ACCESSTOKEN,
+        expires: config.EM_EXPIRES
+      }
+    });
 
     const mailOptions = {
       from: config.EM_USERNAME,
       to: config.EMAIL,
-      subject: 'New message from michaelporter.dev',
+      subject: `${req.body.firstname} ${req.body.lastname} via michaelporter.dev`,
       html: mailTemplate
     }
 
