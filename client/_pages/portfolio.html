@@ -5,7 +5,17 @@ title: Portfolio
 ---
 <div class="portfolio">
 
+  <div id="portfolio-filter">
+    <button class="btn active-filter" onclick="filterSelection('all')">All</button>
+    <button class="btn" onclick="filterSelection('artwork')">Art</button>
+    <button class="btn" onclick="filterSelection('print')">Print</button>
+    <button class="btn" onclick="filterSelection('website')">Web</button>
+    <button class="btn" onclick="filterSelection('logo')">Logos</button>
+  </div>
+
   {% include portfolio_item.html
+
+    type="artwork"
     
     title="Gorilla Lisa"
 
@@ -21,6 +31,8 @@ title: Portfolio
 
   {% include portfolio_item.html
 
+    type="print"
+
     title="Scorpion Fluorescence Research Poster"
 
     image="images/portfolio/scorpion_poster_final_updated.jpg"
@@ -34,6 +46,8 @@ title: Portfolio
   %}
 
   {% include portfolio_item.html 
+
+    type="website"
     
     title="Concept Site for Dissidence Reno"
     
@@ -48,6 +62,8 @@ title: Portfolio
   %}
 
   {% include portfolio_item.html 
+
+    type="website"
     
     title="My Previous Personal Website"
     
@@ -62,6 +78,8 @@ title: Portfolio
   %}
 
   {% include portfolio_item.html 
+
+    type="website"
     
     title="Website for the Age and Integrative Medicine Society"
     
@@ -76,6 +94,8 @@ title: Portfolio
   %}
 
   {% include portfolio_item.html 
+
+    type="print"
     
     title="Brochure for the Age and Integrative Medicine Society"
     
@@ -91,6 +111,8 @@ title: Portfolio
 
   {% include portfolio_item.html 
 
+    type="logo"
+
     title="Scoop on Skin podcast logo"
 
     image="images/portfolio/scoop_on_skin.png"
@@ -104,7 +126,15 @@ title: Portfolio
   %}
 
 
-
+  <noscript>
+    <style>
+      .portfolio-item {
+        display: block;
+      }  
+    </style>
+  </noscript>
 
 </div>
+
+<script src="/js/portfolio.js"></script>
 

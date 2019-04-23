@@ -3,13 +3,35 @@
     margin-right: 10px;
 }
 
-.portfolio-item {
+#portfolio-filter {
     max-width: 600px;
     margin: auto;
     display: block;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin: auto;
+    display: none;
 }
 
 .portfolio-item-title {
     text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1.1em;
+    background-color: white;
+}
+
+.active-filter {
+    border: 5px solid red;
 }
 
