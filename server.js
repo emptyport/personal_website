@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 require('./api/contact')(app);
+require('./api/blogSearch')(app);
 
 app.use(express.static(path.join(__dirname, 'client/_site')));
 
